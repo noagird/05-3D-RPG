@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://NPC/NPC.gd" type="Script" id=7]
 [ext_resource path="res://UI/Dialogue.gd" type="Script" id=8]
 [ext_resource path="res://UI.gd" type="Script" id=9]
+[ext_resource path="res://Score.gd" type="Script" id=10]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 1, 0, 0, 1 )
@@ -89,6 +90,7 @@ margin_right = 510.0
 margin_bottom = 30.0
 text = "Score:"
 valign = 1
+script = ExtResource( 10 )
 
 [node name="Time" type="Label" parent="UI"]
 margin_left = 512.0

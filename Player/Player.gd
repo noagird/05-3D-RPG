@@ -32,6 +32,8 @@ func _physics_process(_delta):
 	
 	if Input.is_action_just_pressed("shoot") and target != null and target.is_in_group("target"):
 		target._die()
+		Global.update_score(200)
+	
 
 	
 func _input(event):
